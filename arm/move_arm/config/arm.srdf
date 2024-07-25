@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<robot name="arm_robot">
+    <group name="arm">
+        <joint name="base_joint"/>
+
+        <joint name="joint_1"/>
+        <joint name="joint_2"/>
+        <joint name="joint_3"/>
+        <joint name="joint_4"/>
+        <joint name="joint_5"/>
+
+    </group>
+
+    <group name="gripper">
+        <joint name="joint_6"/>
+        <joint name="joint_7"/>
+
+        <!-- <joint name="joint_8"/>
+        <joint name="joint_9"/> -->
+
+    </group>
+
+    <group_state name="home" group="arm">
+        <joint name="joint_1" value="0"/>
+        <joint name="joint_2" value="0"/>
+        <joint name="joint_3" value="0"/>
+        <joint name="joint_4" value="0"/>
+        <joint name="joint_5" value="0"/>
+    </group_state>
+
+    <group_state name="home" group="gripper">
+        <joint name="joint_6" value="0"/>
+    </group_state>
+
+    <!-- <disable_collision link1="base_link" link2="base_plate_link" reason="Adjacent"/>
+    <disable_collision link1="base_plate_link" link2="link_1" reason="never"/>
+    <disable_collision link1="link_1" link2="link_2" reason="never"/>
+    <disable_collision link1="link_2" link2="link_3" reason="Never"/>
+    <disable_collision link1="link_3" link2="link_4" reason="Never"/>
+
+    <disable_collision link1="link_4" link2="link_5" reason="Never"/>
+    <disable_collision link1="link_4" link2="link_6" reason="Never"/>
+
+    <disable_collision link1="link_5" link2="link_6" reason="Adjacent"/>
+
+    <disable_collision link1="link_5" link2="link_7" reason="Never"/>
+    <disable_collision link1="link_6" link2="link_8" reason="Never"/>
+
+    <disable_collision link1="link_7" link2="base_link" reason="Never"/>
+    <disable_collision link1="link_8" link2="base_link" reason="Never"/> -->
+    <!-- <disable_collision link1="link_3" link2="link_4" reason="Never"/>
+    <disable_collision link1="link_3" link2="link_4" reason="Never"/> -->
+
+
+    <disable_collisions link1="base_link" link2="base_plate_link" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="link_1" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_2" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_3" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_4" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_5" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_6" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link_7" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_1" reason="Adjacent"/>
+    <disable_collisions link1="base_plate_link" link2="link_2" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_3" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_4" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_5" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_6" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_7" reason="Never"/>
+    <disable_collisions link1="base_plate_link" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_2" reason="Adjacent"/>
+    <disable_collisions link1="link_1" link2="link_3" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_4" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_5" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_6" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_1" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_2" link2="link_3" reason="Adjacent"/>
+    <disable_collisions link1="link_2" link2="link_4" reason="Never"/>
+    <disable_collisions link1="link_2" link2="link_5" reason="Never"/>
+    <disable_collisions link1="link_2" link2="link_6" reason="Never"/>
+    <disable_collisions link1="link_2" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_2" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_3" link2="link_4" reason="Adjacent"/>
+    <disable_collisions link1="link_3" link2="link_5" reason="Never"/>
+    <disable_collisions link1="link_3" link2="link_6" reason="Never"/>
+    <disable_collisions link1="link_3" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_3" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_4" link2="link_5" reason="Adjacent"/>
+    <disable_collisions link1="link_4" link2="link_6" reason="Adjacent"/>
+    <disable_collisions link1="link_4" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_4" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_5" link2="link_6" reason="Never"/>
+    <disable_collisions link1="link_5" link2="link_7" reason="Adjacent"/>
+    <disable_collisions link1="link_5" link2="link_8" reason="Never"/>
+    <disable_collisions link1="link_6" link2="link_7" reason="Never"/>
+    <disable_collisions link1="link_6" link2="link_8" reason="Adjacent"/>
+    <disable_collisions link1="link_7" link2="link_8" reason="Default"/>
+    
+</robot>
